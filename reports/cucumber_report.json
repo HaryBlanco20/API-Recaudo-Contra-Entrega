@@ -1,0 +1,163 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "validación-de-la-api-de-creación-de-guías;validar-la-creación-de-una-guía-con-datos-válidos",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validar la creación de una guía con datos válidos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que soy un usuario autenticado en el sistema de guías",
+            "match": {
+              "location": "tests\\stepsDefinitions\\CrearGuia.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11638999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "envío una solicitud con todos los campos obligatorios correctamente diligenciados",
+            "match": {
+              "location": "tests\\stepsDefinitions\\CrearGuia.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3284753700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "el sistema debe aceptar la solicitud y responder con un código de estado 200",
+            "match": {
+              "location": "tests\\stepsDefinitions\\CrearGuia.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6661200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "validación-de-la-api-de-creación-de-guías;validar-error-cuando-referenciarecaudo-está-vacío",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Validar error cuando referenciaRecaudo está vacío",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "que soy un usuario autenticado en el sistema de guías",
+            "match": {
+              "location": "tests\\stepsDefinitions\\CrearGuia.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6009200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "envío una solicitud con “Referencia recaudo” vacío",
+            "match": {
+              "location": "tests\\stepsDefinitions\\CrearGuia.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90914799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "el sistema debe de rechazar la solicitud con un código de estado 400",
+            "match": {
+              "location": "tests\\stepsDefinitions\\CrearGuia.steps.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1887699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "validación-de-la-api-de-creación-de-guías;validar-error-cuando-los-campos-obligatorios-están-vacíos",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Validar error cuando los campos obligatorios están vacíos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "que soy un usuario autenticado en el sistema de guías",
+            "match": {
+              "location": "tests\\stepsDefinitions\\CrearGuia.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6038000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "envío una solicitud sin ingresar datos en los campos obligatorios “Valor a recaudar y Referencia recaudo”",
+            "match": {
+              "location": "tests\\stepsDefinitions\\CrearGuia.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90233500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "el sistema rechaza la solicitud con un código de estado 400",
+            "match": {
+              "location": "tests\\stepsDefinitions\\CrearGuia.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1689400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "validación-de-la-api-de-creación-de-guías",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Validación de la API de creación de guías",
+    "tags": [],
+    "uri": "tests\\features\\CrearGuia.feature"
+  }
+]

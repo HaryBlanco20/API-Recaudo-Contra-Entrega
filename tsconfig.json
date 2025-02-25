@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "target": "ES6",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true
+    },
+    "include": [
+      "tests/**/*.ts",
+      "tareas/**/*.ts",
+      "actores/**/*.ts",
+      "tests/features/**/*.feature",         // Incluye todos los archivos .feature
+      "tests/stepDefinitions/**/*.ts"        // Incluye todos los archivos .ts de pasos
+, "tests/escenarios/CrearGuiaEsc.js"    ],
+
+    "exclude": [
+    "node_modules"
+  ]
+
+}
+  
